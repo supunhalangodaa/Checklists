@@ -22,11 +22,6 @@
 - Technique: Review IAM roles and permissions to ensure the principle of least privilege is enforced.
 - Tools: GCP's IAM & Admin console, Google Cloud SDK, or Forseti Security.
 
-### Web application vulnerability assessment:
-
-- Technique: Test for common vulnerabilities in web applications, such as SQL injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).
-- Tools: Burp Suite, OWASP ZAP, or SQLMap.
-
 ### Container security assessment:
 
 - Technique: Assess vulnerabilities in container images deployed in your GCP environment, including Docker and Kubernetes.
@@ -46,11 +41,6 @@
 
 - Technique: Simulate data exfiltration attempts to ensure security controls prevent unauthorized data transfers.
 - Tools: Google Cloud SDK, Ncat, or CURL.
-
-### Social engineering and phishing:
-
-- Technique: Test employees' awareness of social engineering and phishing attacks by simulating real-world scenarios.
-- Tools: Gophish, Social-Engineer Toolkit (SET), or King Phisher.
 
 ## Lateral Movement
 
