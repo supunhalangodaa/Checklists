@@ -1,99 +1,66 @@
-# Network Security Checklist
+# Network Security Penetration Testing Checklist
 
-## Switch Security:
+## Switches:
+1. **Port Security:**
+   - Verify MAC address filtering and limitations on the number of MAC addresses per port.
+   - Check for unauthorized access.
 
-### 1. Physical Security:
-- [ ] Physical access controls to switch locations.
-- [ ] Unauthorized cable access prevention.
-- [ ] Secure cable management.
+2. **VLAN Security:**
+   - Ensure proper segmentation and isolation.
+   - Test VLAN hopping vulnerabilities.
 
-### 2. Configuration Security:
-- [ ] Strong password policies for switch access.
-- [ ] Disable unused ports and services.
-- [ ] Implement port security features.
-- [ ] VLAN configuration and segmentation.
-- [ ] Ensure proper STP (Spanning Tree Protocol) configuration.
+3. **STP (Spanning Tree Protocol):**
+   - Check for misconfigurations leading to STP-based attacks.
+   - Disable unnecessary STP instances.
 
-### 3. Monitoring and Logging:
-- [ ] Enable logging and monitoring features.
-- [ ] Regularly review switch logs for anomalies.
-- [ ] Set up SNMP (Simple Network Management Protocol) for monitoring.
+## Routers:
+1. **Access Control Lists (ACLs):**
+   - Review and test ACLs for proper traffic filtering.
+   - Check for overly permissive rules.
 
-### 4. Firmware and Software:
-- [ ] Regularly update switch firmware.
-- [ ] Validate and test firmware updates before deployment.
+2. **Routing Protocol Security:**
+   - Verify security of routing protocols (e.g., OSPF, BGP).
+   - Check authentication and encryption settings.
 
-### 5. Access Control:
-- [ ] Implement proper access controls using ACLs (Access Control Lists).
-- [ ] Role-based access controls for switch management.
+3. **Management Access:**
+   - Secure management interfaces with strong authentication (SSH, SNMPv3).
+   - Disable unnecessary services.
 
-### 6. Intrusion Detection:
-- [ ] Implement intrusion detection and prevention mechanisms.
-- [ ] Monitor for unusual traffic patterns or behavior.
+## Firewalls:
+1. **Rule Set Review:**
+   - Review and validate firewall rule sets.
+   - Check for overly permissive rules.
 
-## Firewall Security:
+2. **Stateful Inspection:**
+   - Verify effectiveness of stateful inspection.
+   - Test for evasion techniques.
 
-### 1. Rule Base Review:
-- [ ] Review and update firewall rule sets.
-- [ ] Regularly audit and document firewall rules.
+3. **VPN Configuration:**
+   - Assess security of VPN configurations.
+   - Verify encryption and authentication settings.
 
-### 2. Default Configurations:
-- [ ] Change default login credentials.
-- [ ] Disable unnecessary services and ports.
+## Wireless LAN (WLAN) Devices:
+1. **WPA/WPA2/WPA3 Security:**
+   - Ensure strong encryption (WPA2 or WPA3).
+   - Check for weak or default passwords.
 
-### 3. Logging and Monitoring:
-- [ ] Enable firewall logging.
-- [ ] Regularly review and analyze firewall logs.
+2. **SSID Security:**
+   - Disable SSID broadcasting (if not needed).
+   - Verify SSIDs do not reveal sensitive information.
 
-### 4. Update and Patching:
-- [ ] Regularly update firewall firmware/software.
-- [ ] Implement a process for testing and deploying updates.
+3. **WIDS/WIPS (Wireless Intrusion Detection/Prevention System):**
+   - Test effectiveness of WIDS/WIPS.
+   - Check for rogue access points.
 
-### 5. VPN Security:
-- [ ] Review VPN configurations and policies.
-- [ ] Ensure secure VPN protocols and encryption.
+## Access Points (APs):
+1. **Authentication and Encryption:**
+   - Verify use of strong authentication and encryption protocols.
+   - Check for open or insecure configurations.
 
-### 6. Intrusion Prevention:
-- [ ] Implement intrusion prevention mechanisms.
-- [ ] Regularly test intrusion prevention rules.
+2. **Physical Security:**
+   - Ensure physical security of access points.
+   - Test for vulnerabilities related to physical access.
 
-## Router Security:
-
-### 1. Configuration Security:
-- [ ] Strong password policies for router access.
-- [ ] Disable unnecessary services and interfaces.
-- [ ] Secure remote access to routers.
-
-### 2. Routing Protocol Security:
-- [ ] Secure routing protocols with authentication.
-- [ ] Regularly review and update routing configurations.
-
-### 3. Access Control:
-- [ ] Implement proper access controls using ACLs.
-- [ ] Role-based access controls for router management.
-
-### 4. Firmware and Software:
-- [ ] Regularly update router firmware.
-- [ ] Validate and test firmware updates before deployment.
-
-### 5. Monitoring and Logging:
-- [ ] Enable logging and monitoring features.
-- [ ] Regularly review router logs for anomalies.
-
-### 6. Security Audits:
-- [ ] Conduct periodic security audits of routers.
-- [ ] Test router configurations against security best practices.
-
-## General Network Security:
-
-### 1. Network Segmentation:
-- [ ] Ensure proper network segmentation.
-- [ ] Implement VLANs to isolate network segments.
-
-### 2. DMZ (Demilitarized Zone):
-- [ ] Implement and secure DMZ zones.
-- [ ] Review and update DMZ configurations.
-
-### 3. Wireless Network Security:
-- [ ] Secure Wi-Fi networks with WPA3 encryption.
-- [ ] Change default wireless passwords regularly.
+3. **Firmware and Patch Management:**
+   - Confirm access point firmware is up to date.
+   - Check for vulnerabilities related to outdated firmware.
