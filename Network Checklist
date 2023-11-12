@@ -1,66 +1,66 @@
-# Network Security Penetration Testing Checklist
+# Blackbox Offensive Penetration Testing Checklist
 
 ## Switches:
-1. **Port Security:**
-   - Verify MAC address filtering and limitations on the number of MAC addresses per port.
-   - Check for unauthorized access.
+1. **Port Discovery:**
+   - Enumerate open ports and services on switches.
+   - Identify potential entry points for unauthorized access.
 
-2. **VLAN Security:**
-   - Ensure proper segmentation and isolation.
-   - Test VLAN hopping vulnerabilities.
+2. **VLAN Enumeration:**
+   - Attempt to discover and enumerate VLANs in use.
+   - Exploit potential misconfigurations or vulnerabilities in VLAN implementations.
 
-3. **STP (Spanning Tree Protocol):**
-   - Check for misconfigurations leading to STP-based attacks.
-   - Disable unnecessary STP instances.
+3. **STP Vulnerabilities:**
+   - Probe for misconfigurations leading to STP-based attacks.
+   - Attempt to disrupt network stability through STP manipulation.
 
 ## Routers:
-1. **Access Control Lists (ACLs):**
-   - Review and test ACLs for proper traffic filtering.
-   - Check for overly permissive rules.
+1. **External Network Mapping:**
+   - Identify and enumerate external IP ranges.
+   - Probe for potential router misconfigurations or vulnerabilities.
 
-2. **Routing Protocol Security:**
-   - Verify security of routing protocols (e.g., OSPF, BGP).
-   - Check authentication and encryption settings.
+2. **Routing Protocol Assessment:**
+   - Attempt to gather information on routing protocols and their configurations.
+   - Exploit vulnerabilities related to routing protocol misconfigurations.
 
-3. **Management Access:**
-   - Secure management interfaces with strong authentication (SSH, SNMPv3).
-   - Disable unnecessary services.
+3. **External Service Enumeration:**
+   - Enumerate and assess externally accessible services.
+   - Identify potential weaknesses in access control lists (ACLs).
 
 ## Firewalls:
-1. **Rule Set Review:**
-   - Review and validate firewall rule sets.
-   - Check for overly permissive rules.
+1. **Rule Set Enumeration:**
+   - Attempt to enumerate firewall rule sets from an external perspective.
+   - Identify overly permissive rules allowing unauthorized traffic.
 
-2. **Stateful Inspection:**
-   - Verify effectiveness of stateful inspection.
-   - Test for evasion techniques.
+2. **Firewall Evasion Techniques:**
+   - Test for evasion techniques to bypass firewall filtering.
+   - Assess the effectiveness of stateful inspection.
 
-3. **VPN Configuration:**
-   - Assess security of VPN configurations.
-   - Verify encryption and authentication settings.
+3. **VPN Exploitation:**
+   - Probe VPN configurations for weaknesses.
+   - Attempt to exploit vulnerabilities in VPN implementations.
 
 ## Wireless LAN (WLAN) Devices:
-1. **WPA/WPA2/WPA3 Security:**
-   - Ensure strong encryption (WPA2 or WPA3).
-   - Check for weak or default passwords.
+1. **Wireless Network Discovery:**
+   - Enumerate available wireless networks from an external perspective.
+   - Identify open or insecure configurations.
 
-2. **SSID Security:**
-   - Disable SSID broadcasting (if not needed).
-   - Verify SSIDs do not reveal sensitive information.
+2. **WLAN Exploitation:**
+   - Attempt to exploit weaknesses in WPA/WPA2/WPA3 security.
+   - Test for rogue access points and potential WIDS/WIPS bypass.
 
-3. **WIDS/WIPS (Wireless Intrusion Detection/Prevention System):**
-   - Test effectiveness of WIDS/WIPS.
-   - Check for rogue access points.
+3. **SSID Enumeration:**
+   - Discover and enumerate SSIDs.
+   - Exploit potential information leakage from SSID names.
 
 ## Access Points (APs):
-1. **Authentication and Encryption:**
-   - Verify use of strong authentication and encryption protocols.
-   - Check for open or insecure configurations.
+1. **External AP Enumeration:**
+   - Identify and enumerate externally accessible access points.
+   - Probe for vulnerabilities in AP configurations.
 
-2. **Physical Security:**
-   - Ensure physical security of access points.
-   - Test for vulnerabilities related to physical access.
+2. **Authentication Bypass:**
+   - Attempt to bypass authentication mechanisms on access points.
+   - Exploit potential vulnerabilities in authentication protocols.
 
-3. **Firmware and Patch Management:**
-   - Confirm access point firmware is up to date.
-   - Check for vulnerabilities related to outdated firmware.
+3. **Firmware Vulnerability Testing:**
+   - Assess access point firmware for known vulnerabilities.
+   - Exploit weaknesses related to outdated firmware.
