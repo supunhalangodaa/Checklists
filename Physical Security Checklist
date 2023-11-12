@@ -1,0 +1,32 @@
+# IoT Devices Physical Security Checklist
+
+## 1. Fingerprint Readers:
+- [ ] **Secure Placement:** Ensure that fingerprint readers are securely mounted to prevent tampering or removal.
+- [ ] **Biometric Data Protection:** Implement encryption and secure storage for biometric data.
+- [ ] **Tamper Detection:** Install tamper-evident features to detect any unauthorized attempts to open or manipulate the device.
+- [ ] **Access Controls:** Implement access controls to restrict physical access to the fingerprint reader.
+
+## 2. Fire Alarms:
+- [ ] **Secure Mounting:** Ensure that fire alarm devices are securely mounted and not easily accessible.
+- [ ] **Tamper Detection:** Implement tamper detection mechanisms to alert in case of unauthorized interference.
+- [ ] **Regular Testing:** Schedule regular tests and inspections to ensure the functionality of fire alarm systems.
+- [ ] **Emergency Power:** Ensure that fire alarms have a reliable power source, such as a backup battery.
+
+## 3. CCTV Cameras:
+- [ ] **Secure Placement:** Install CCTV cameras in locations that prevent tampering or vandalism.
+- [ ] **Tamper Alerts:** Implement tamper detection alerts for the cameras.
+- [ ] **Secure Video Storage:** Ensure that recorded video footage is securely stored and protected from unauthorized access.
+- [ ] **Regular Maintenance:** Schedule routine maintenance to clean and check the condition of the cameras.
+
+## 4. RFID Card Systems:
+- [ ] **Secure Card Readers:** Ensure that RFID card readers are securely installed and cannot be easily tampered with.
+- [ ] **Card Encryption:** Implement encryption for RFID card data to prevent unauthorized access.
+- [ ] **Access Control:** Regularly review and update access control policies for RFID card systems.
+- [ ] **Physical Card Security:** Educate users on the importance of securing their RFID cards to prevent unauthorized use.
+
+## 5. Printers:
+- [ ] **Secure Placement:** Ensure that printers are placed in secure areas to prevent unauthorized access.
+- [ ] **Printer Access Controls:** Implement user authentication for printer access.
+- [ ] **Print Job Security:** Enable secure printing features to prevent unauthorized individuals from accessing printed documents.
+- [ ] **Regular Maintenance:** Schedule routine maintenance to check for any physical vulnerabilities or signs of tampering.
+
